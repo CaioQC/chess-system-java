@@ -28,7 +28,7 @@ public class ChessMatch {
 	
 	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
 		Position source = sourcePosition.toPosition();
-		Position target = sourcePosition.toPosition();
+		Position target = targetPosition.toPosition();
 		validateSourcePosition(source);
 		Piece capturedPiece = makeMove(source, target);
 		return (ChessPiece) capturedPiece;
@@ -65,5 +65,6 @@ public class ChessMatch {
         placeNewPiece('d', 7, new Rook(board, Color.BLACK));
         placeNewPiece('e', 7, new Rook(board, Color.BLACK));
         placeNewPiece('e', 8, new Rook(board, Color.BLACK));
+        placeNewPiece('d', 8, new King(board, Color.BLACK));
 	}
 }
