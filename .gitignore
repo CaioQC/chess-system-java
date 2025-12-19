@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# Ignorar pasta de binários do Eclipse
+/bin/
+
 # Log file
 *.log
 
